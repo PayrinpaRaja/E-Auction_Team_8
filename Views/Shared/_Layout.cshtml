@@ -1,0 +1,126 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - E_AuctionProject</title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="../E_AuctionProject.styles.css" asp-append-version="true" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">E_AuctionHouse</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        @{
+                            try
+                            {
+                                var role= HttpContextAccessor.HttpContext.Session.GetInt32("role");
+                                var SessionName = Context.Session.GetString("name");
+                                if(role==901)
+                                {
+                                                    <ul class="navbar-nav flex-grow-1">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="Home">
+                                                                <button type="button" class="btn btn-dark  text-white position-relative btn-outline-info">Home</button>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="ViewUser">
+                                                                <button type="button" class="btn btn-dark text-white position-relative btn-outline-info">ViewUser</button>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="ViewTendor">
+                                                                <button type="button" class="btn btn-dark text-white position-relative btn-outline-info">
+                                                                      ViewTendor
+                                                                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                                                        @ViewData["count"]
+                                                                        <span class="visually-hidden">unread messages</span>
+                                                                      </span>
+                                                                    </button>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="Auction" asp-action="Logout">
+                                                                <button type="button" class="btn btn-dark text-white position-relative btn-outline-info">Logout</button>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                }
+                                else if(role==902)
+                                {
+                                                    <ul class="navbar-nav flex-grow-1">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="Home">
+                                                                <button type="button" class="btn btn-dark text-white position-relative btn-outline-danger">Home</button>                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="AddProduct">
+                                                                <button type="button" class="btn btn-dark text-white position-relative btn-outline-danger">AddProduct</button>                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="ViewProduct">
+                                                                <button type="button" class="btn btn-dark text-white position-relative btn-outline-danger">ViewProduct</button>                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="ViewAuction">
+                                                                <button type="button" class="btn btn-dark text-white position-relative btn-outline-danger">ViewAuction</button>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="ViewStatus">
+                                                                <button type="button" class="btn btn-dark  text-white position-relative btn-outline-danger">ViewStatus</button>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="MenuPage" asp-action="ViewProfile">  
+                                                                <button type="button" class="btn btn-dark position-relative btn-outline-info"><span class="text-white" style="font-weight:bold;">@SessionName's Profile</span></button>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" asp-area="" asp-controller="Auction" asp-action="Logout">
+                                                                <button type="button" class="btn btn-dark text-white position-relative btn-outline-danger">Logout</button>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                }
+                            }
+                            catch
+                            {
+                                
+                            }
+                        }
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-dark">
+        <div class="container">
+            &copy; 2022 - E_AuctionProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

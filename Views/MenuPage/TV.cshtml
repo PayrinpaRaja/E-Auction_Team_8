@@ -1,0 +1,33 @@
+﻿<br/>
+<div class="container">
+    <div class="row align-items-center">
+        @foreach(var product in (List<E_AuctionProject.Models.AddProduct>)TempData["TV"])
+        {
+            
+            <div class="col-md-3">
+                <div class="card mb-4 bg-dark">
+                       <br/>
+                       <center>
+                                                   @{if(product.Product=="TV")
+                                                   {
+                                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVSIL2p8J0xp41flB-XHPGMJf-PSL2WhSmuw&usqp=CAU" alt="Bike image" style="height: 200px;" width="200"  >
+                                                   }
+                                                   else if(product.Product=="Car")
+                                                   {
+                                                       <img src="https://img.freepik.com/free-vector/mini-car-cartoon_261104-40.jpg" alt="TV image" style="height: 200px;" width="200"  >
+                                                   }
+                                                   else if(product.Product=="Bike")
+                                                   {
+                                                       <img src="https://img.freepik.com/free-vector/bigbike-sport-motorcycle-cartoon_261104-88.jpg?w=2000" alt="TV image" style="height: 200px;" width="200"  >
+                                                   }}
+                       </center>
+                       <div class="card-body">
+                        <h5 class="card-title text-white">@product.Amount </h5>
+                        <p class="card-text text-white">@product.Details @product.MobileNumber</p>
+                        <p class="card-text text-end"><small class="text-light">Posted @((int)DateTime.Now.Subtract(@product.O_date).TotalDays) days ago</small></p>
+                      </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

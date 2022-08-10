@@ -1,0 +1,40 @@
+﻿@model E_AuctionProject.Models.Login
+
+@{
+    ViewData["Title"] = "ALogin";
+}
+
+<div >
+    <center>
+        <b><font face="Times New Roman" size="7" color="black">WELCOME TO E-AUCTION</font></b>
+    </center>
+    <div class="row align-items-center p-5">
+        <div class="col-md-8">
+            <img src="https://thumbs.dreamstime.com/b/online-auction-concept-people-buying-assets-internet-tiny-male-female-characters-around-huge-laptop-gavel-holding-rising-177341993.jpg" width="850" height="480" >
+        </div>
+        <div class="col-md-4">
+            <form asp-action="ALogin">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="CustomerID" class="control-label"></label>
+                    <input asp-for="CustomerID" class="form-control" />
+                    <span asp-validation-for="CustomerID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="LOGIN" class="btn btn-success mt-4" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

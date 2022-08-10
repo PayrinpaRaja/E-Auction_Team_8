@@ -1,0 +1,99 @@
+﻿@model E_AuctionProject.Models.ApplyBid
+
+@{
+    ViewData["Title"] = "Apply";
+}
+<center>
+    <u><b><font face="Times New Roman" size="8" color="black">Bid Details</font></b></u>
+</center>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <form asp-action="Apply">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group d-none">
+                <label asp-for="BidNo" class="control-label"></label>
+                <input asp-for="BidNo" class="form-control readonly" />
+                <span asp-validation-for="BidNo" class="text-danger"></span>
+            </div>
+            <div class="form-group d-none">
+                <label asp-for="Pt_no" class="control-label"></label>
+                <input asp-for="Pt_no" class="form-control" />
+                <span asp-validation-for="Pt_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BuyerName" class="control-label"></label>
+                <input asp-for="BuyerName" class="form-control" readonly />
+                <span asp-validation-for="BuyerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="B_Product" class="control-label"></label>
+                <input asp-for="B_Product" class="form-control" readonly />
+                <span asp-validation-for="B_Product" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MinAmount" class="control-label"></label>
+                <input asp-for="MinAmount" class="form-control" readonly />
+                <span asp-validation-for="MinAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="B_Details" class="control-label"></label>
+                <input asp-for="B_Details" class="form-control" readonly />
+                <span asp-validation-for="B_Details" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Owner" class="control-label"></label>
+                <input asp-for="Owner" class="form-control" readonly />
+                <span asp-validation-for="Owner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BidAmount" class="control-label"></label>
+                <input asp-for="BidAmount" class="form-control" />
+                <span asp-validation-for="BidAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group d-none">
+                <label asp-for="CustomerID" class="control-label"></label>
+                <input asp-for="CustomerID" class="form-control" />
+                <span asp-validation-for="CustomerID" class="text-danger"></span>
+            </div>
+            <div class="form-group d-none">
+                <label asp-for="status" class="control-label"></label>
+                <input asp-for="status" class="form-control" />
+                <span asp-validation-for="status" class="text-danger"></span>
+            </div>
+            <div class="form-group d-none">
+                <label asp-for="Approval" class="control-label"></label>
+                <input asp-for="Approval" class="form-control" />
+                <span asp-validation-for="Approval" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Save" class="btn btn-dark mt-4" />
+            </div> 
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+@{
+    try
+    {
+        if(TempData["Apply"] == "1")
+        {
+                <script>
+                swal("Thank You!", "Bid Applied Sucecssfully!", "success");
+                </script>
+        }
+    }
+    catch
+    {
+        
+    }
+}

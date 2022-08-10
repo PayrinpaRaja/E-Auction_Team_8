@@ -1,0 +1,93 @@
+﻿@model E_AuctionProject.Models.AddProduct
+
+@{
+    ViewData["Title"] = "AddProduct";
+}
+
+<div class="text-center">
+    <b><font face="Times New Roman" size="7" color="black">Add Your Product</font></b>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-4"> </div>
+    <div class="col-md-4">
+        <form asp-action="AddProduct">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control"  />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product" class="control-label"></label>
+                <input asp-for="Product" class="form-control" />
+                <span asp-validation-for="Product" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Details" class="control-label"></label>
+                <input asp-for="Details" class="form-control" />
+                <span asp-validation-for="Details" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="O_date" class="control-label"></label>
+                <input asp-for="O_date" class="form-control" />
+                <span asp-validation-for="O_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="L_date" class="control-label"></label>
+                <input asp-for="L_date" class="form-control" />
+                <span asp-validation-for="L_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MobileNumber" class="control-label"></label>
+                <input asp-for="MobileNumber" class="form-control" />
+                <span asp-validation-for="MobileNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Add Product" class="btn btn-warning mt-3" />
+                <input type="reset" value="Reset" class="btn btn-dark mt-3"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+@{
+    try
+    {
+        if(TempData["ap"] !=null)
+        {
+            if(TempData["ap"] == "1")
+            {
+                <script>
+                swal("Thank You!", "Product Added Sucecssfully!", "success");
+                </script>
+            }
+            else
+            {
+                <script>
+                swal("Error", "Failed to Add the Product", "error");
+                </script>
+            }
+        }
+    }
+    catch
+    {
+        
+    }
+}

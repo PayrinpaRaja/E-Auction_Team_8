@@ -1,0 +1,36 @@
+﻿<div class="text-center">
+    <u><b><font face="Times New Roman" size="7" color="black">List of Users</font></b></u>
+</div>
+<br/>
+    <table class="table table-bordered table-hover">
+        <tr class="bg-dark text-white text-center">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>DOB</th>
+            <th>MobileNumber</th>
+        </tr>
+        @{
+            try
+            {
+                if(TempData["vu"]!=null)
+                {
+                    foreach(var x in (List<E_AuctionProject.Models.UserMaster>)TempData["vu"])
+                    {
+                        <tr class="text-center">
+                        <td>@x.Firstname</td>
+                        <td>@x.Lastname</td>
+                        <td>@x.Email</td>
+                        <td>@x.DOB</td>
+                        <td>@x.MobileNumber</td>
+                        </tr>
+                    }
+                }
+            }
+            catch
+            {
+                
+            }
+        }
+    </table>
+

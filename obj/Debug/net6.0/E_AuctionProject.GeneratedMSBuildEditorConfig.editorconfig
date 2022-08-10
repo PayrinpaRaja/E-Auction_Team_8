@@ -1,0 +1,120 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = E_AuctionProject
+build_property.RootNamespace = E_AuctionProject
+build_property.ProjectDir = C:\Users\payri\source\repos\E_AuctionProject\E_AuctionProject\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\payri\source\repos\E_AuctionProject\E_AuctionProject
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/Auction/ALogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxBTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/Auction/Frontpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxGcm9udHBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/Auction/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/Auction/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVjdGlvblxTaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcQWRkUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/Apply.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcQXBwbHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/Bike.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcQmlrZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/Car.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcQ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/Fridge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcRnJpZGdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/House.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcSG91c2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/TV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcVFYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/UnViewAuction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcVW5WaWV3QXVjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/ViewAuction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcVmlld0F1Y3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/ViewProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcVmlld1Byb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/ViewProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcVmlld1Byb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/ViewStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcVmlld1N0YXR1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/ViewTendor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcVmlld1RlbmRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/MenuPage/ViewUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVBhZ2VcVmlld1VzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/payri/source/repos/E_AuctionProject/E_AuctionProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qd335x75o9
